@@ -1,0 +1,81 @@
+:root {
+  --mainOrange: #3e67a8;
+  --lightOrange: #78aefa;
+  --mainBackground: #ededed;
+  --mainDark: #002687;
+  --mainYellow: #f5af00;
+  --mainGreen: #76d971;
+}
+
+body {
+  font-family: 'Lato', sans-serif !important;
+  color: var(--mainDark) !important;
+}
+
+.text-title {
+  font-family: 'Lato';
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-orange {
+  color: var(--mainOrange);
+}
+
+.text-dark {
+  color: var(--mainDark);
+}
+
+.text-bright {
+  color: var(--lightOrange);
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8 rem !important;
+  color: black;
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+
+.cart-item {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.fa-trash {
+  cursor: pointer;
+}
+
+.fa-shopping-cart {
+  color: white;
+}
+
+.nav-item img {
+  height: 50px;
+}
+
+.cart-item-wrapper {
+  background-color: var(--mainBackground);
+  border: 1px solid var(--mainDark);
+  border-radius: 0.3rem;
+}
+
+.incentives {
+  background-color: var(--lightOrange);
+}
+
+.incentives * {
+  padding: 0 0.3rem;
+  color: white;
+}
+
+.slider-wrapper {
+  padding-bottom: 2rem !important;
+  padding-top: 1rem;
+}
+
+.thumbs-wrapper {
+  display: none;
+}
