@@ -14,7 +14,7 @@ const Navbar = () => {
   // 
 
   return (
-      <NavWrapper className="navbar navbar-expand-md navbar-light">
+      <NavWrapper className="navbar navbar-expand-lg navbar-light">
         <Link to="/" className="navbar-brand">
           <img src={mainLogo} alt="main logo" height="50" />
           Blush Bay
@@ -57,6 +57,7 @@ const NavWrapper = styled.nav`
 margin-top:3rem;
 border-top:2px solid var(--mainDark);
 border-bottom:2px solid var(--mainDark);
+padding:0 10vw !important;
   .nav-link {
     color:#000 !important;
     font-size: 1.2rem;

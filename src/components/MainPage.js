@@ -1,10 +1,10 @@
 import React from 'react';
-
+import { default as MainContent } from './MainContent';
 const MainPage = () => {
   return (
     <div className="container">
       <div className="row">
-        <h3>Main Page</h3>
+        <MainContent/>
       </div>
     </div>
   )
