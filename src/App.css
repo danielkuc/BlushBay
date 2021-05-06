@@ -68,7 +68,8 @@ body {
 
 .incentives * {
   padding: 0 0.3rem;
-  color: white;
+  color: black;
+  font-weight: 100;
 }
 
 .slider-wrapper {

@@ -6,7 +6,6 @@ import mainLogo from '../imgs/logo.svg';
 import MyCart from './MyCart/MyCart';
 import { Button, Collapse } from 'react-bootstrap';
 
-
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const CartValue = useCart();

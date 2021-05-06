@@ -14,6 +14,7 @@ import useFetchProducts from '../src/contexts/index';
 import {GlobalState} from './state';
 import LoadingModal from './components/LoadingModal'
 import Incentives from './components/Incentives';
+import { default as Banner } from './components/Banner';
 
 export const StoreContext = createContext();
 
@@ -33,6 +34,7 @@ const App = () => {
       <StoreContext.Provider value={{state, setState}}>
       <Navbar />
       <Incentives/>
+      <Banner/>
       <Switch>
         <Route exact path="/" component={MainPage}/>
         <Route exact path="/products" component={ProductList}/>
