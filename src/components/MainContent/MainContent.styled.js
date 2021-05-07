@@ -2,7 +2,22 @@ import styled from 'styled-components';
 
 const StyledMainContent = styled.div`
   .item {
-    margin: 0 1rem !important;
+    margin: 2rem auto !important;
+  }
+
+  a {
+    color:black;
+
+    &:hover {
+      text-decoration:none;
+    }
+  }
+
+  hr {
+    border:;
+  }
+  .text-container {
+    padding:2rem 0;
   }
 `
 
