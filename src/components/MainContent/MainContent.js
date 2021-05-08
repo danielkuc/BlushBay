@@ -3,7 +3,7 @@ import StyledMainContent from './MainContent.styled';
 import { Link } from 'react-router-dom';
 import img1 from '../../imgs/article imgs/makeup1.jpg';
 import img2 from '../../imgs/article imgs/makeup2.jpg';
-import img3 from '../../imgs/article imgs/makeup4.jpg';
+import img3 from '../../imgs/article imgs/makeup 5.jpg';
 
 const MainContent = () => {
   return (
@@ -35,7 +35,7 @@ const MainContent = () => {
       <div className="item col-10 col-md-4 my-4">
         <Link to="#">
           <div className="img-container">
-            <img src={img3} alt="" className="img-fluid" />
+            <img src={img3} alt="" className="img-fluid" height="450"/>
           </div>
           <div className="text-container">
             <h3>Title</h3>
