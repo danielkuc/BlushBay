@@ -12,13 +12,10 @@ const StyledMainContent = styled.div`
       text-decoration:none;
     }
   }
-
-  hr {
-    border:;
-  }
   .text-container {
     padding:2rem 0;
   }
+
 `
 
 export default StyledMainContent;
