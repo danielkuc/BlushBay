@@ -5,27 +5,14 @@ import { useCart } from '../state';
 import mainLogo from '../imgs/logo.svg';
 import MyCart from './MyCart/MyCart';
 import { Button, Collapse } from 'react-bootstrap';
+import { useChangeBackgroundOnScroll } from '../hooks';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const CartValue = useCart();
   const length = CartValue.cart.length;
 
-  useEffect(() =>{
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-        window.removeEventListener("scroll", handleScroll)
-      };
-  },[]);
-
-  const handleScroll = () => {
-    if (window.scrollY > 50) {
-      document.querySelector(`.navbar`).style.background = `var(--lightOrange)`;
-    } else {
-      document.querySelector(`.navbar`).style.background = 'transparent';
-    }
-  }
+  useChangeBackgroundOnScroll('navbar', 60, 'var(--lightOrange)');
 
   return (
       <NavWrapper className="navbar sticky-top navbar-expand-lg navbar-light">

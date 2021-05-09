@@ -50,20 +50,21 @@ import React from 'react'
   };
 };
 
-export const useScroll= (element, value, color) => {
+// changes background color on scroll.
+export const useChangeBackgroundOnScroll= (element, value, changedColor,initialColor) => {
   React.useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
   
     return () => {
-      window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener("scroll", handleScroll);
     };
   },[]);
 
   const handleScroll = () => {
     if (window.scrollY > value) {
-      document.querySelector(`.${element}`).style.color = `${color}`;
+      document.querySelector(`.${element}`).style.background = `${changedColor}`;
     } else {
-      document.querySelector(`.${element}`).style.color = 0;
+      document.querySelector(`.${element}`).style.background = `${initialColor ? initialColor : 'transparent'}`;
     }
   };
 
