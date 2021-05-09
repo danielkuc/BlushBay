@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useCart } from '../state';
@@ -10,10 +10,25 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const CartValue = useCart();
   const length = CartValue.cart.length;
-  // 
+
+  useEffect(() =>{
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+        window.removeEventListener("scroll", handleScroll)
+      };
+  },[]);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      document.querySelector(`.navbar`).style.background = `var(--lightOrange)`;
+    } else {
+      document.querySelector(`.navbar`).style.background = 'transparent';
+    }
+  }
 
   return (
-      <NavWrapper className="navbar navbar-expand-lg navbar-light">
+      <NavWrapper className="navbar sticky-top navbar-expand-lg navbar-light">
         <Link to="/" className="navbar-brand">
           <img src={mainLogo} alt="main logo" height="50" />
           Blush Bay
@@ -57,6 +72,7 @@ margin-top:3rem;
 border-top:2px solid var(--mainDark);
 border-bottom:2px solid var(--mainDark);
 padding:0 10vw !important;
+background:transparent;
   .nav-link {
     color:#000 !important;
     font-size: 1.2rem;
@@ -64,7 +80,7 @@ padding:0 10vw !important;
   }
   .btn-primary {
     border-color:black !important;
-
+    background:#fff !important;
     &:hover, &:active, &:focus{
       background-color:white;
     }

@@ -50,4 +50,23 @@ import React from 'react'
   };
 };
 
+export const useScroll= (element, value, color) => {
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    };
+  },[]);
+
+  const handleScroll = () => {
+    if (window.scrollY > value) {
+      document.querySelector(`.${element}`).style.color = `${color}`;
+    } else {
+      document.querySelector(`.${element}`).style.color = 0;
+    }
+  };
+
+}
+
 export default useFetchProducts;

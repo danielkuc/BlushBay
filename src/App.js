@@ -10,7 +10,7 @@ import Details from './components/Details';
 import Cart from './components/Cart/Cart';
 import Default from './components/Default';
 import Modal from './components/Modal'
-import useFetchProducts from '../src/contexts/index';
+import useFetchProducts from '../src/hooks';
 import {GlobalState} from './state';
 import LoadingModal from './components/LoadingModal'
 import Incentives from './components/Incentives';
