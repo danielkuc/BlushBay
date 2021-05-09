@@ -12,6 +12,10 @@ body {
   color: var(--mainDark) !important;
 }
 
+.container-fluid {
+  padding: 0 !important;
+}
+
 .text-title {
   font-family: 'Lato';
   letter-spacing: 0.3rem;
