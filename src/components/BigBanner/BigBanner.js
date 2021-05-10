@@ -1,6 +1,7 @@
 import React from 'react';
 import StyledBigBanner from './BigBanner.styled';
 import image from '../../imgs/article imgs/makeup4.jpg';
+import { Link } from 'react-router-dom';
 
 const BigBanner = () => {
   return (
@@ -13,7 +14,9 @@ const BigBanner = () => {
           </div>
           <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit hic quod aspernatur molestiae accusantium eveniet magnam aliquam iure asperiores.</article>
         </div>
-        <button className="btn btn-warning d-block mx-auto my-1">Shop Now!</button>
+        <Link to="/products">
+          <button className="btn btn-warning d-block mx-auto my-1">Shop Now!</button>
+        </Link>
       </div>
     </StyledBigBanner>
   )
