@@ -12,7 +12,7 @@ const Navbar = () => {
   const CartValue = useCart();
   const length = CartValue.cart.length;
 
-  useChangeBackgroundOnScroll('navbar', 60, 'var(--lightOrange)');
+  useChangeBackgroundOnScroll('navbar', 70, 'var(--lightOrange)');
 
   return (
       <NavWrapper className="navbar sticky-top navbar-expand-lg navbar-light">
