@@ -9,7 +9,7 @@ const SecondaryContent = () => {
       <div className="container">
         <div>
           <div className="img-container">
-            <img src={img1} alt="" width="150"/>
+            <img src={img1} alt=""/>
           </div>
           <article>
             <h3 className="text-center">Upcycle Your Empty Makeup Containers</h3>
@@ -22,7 +22,7 @@ const SecondaryContent = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda et tenetur aliquid magni eos commodi laboriosam tempore voluptatibus nobis aspernatur vero dolorum alias a eaque, incidunt doloribus, sint eveniet accusantium accusamus qui cum! Dolorem ut quo ex itaque enim sint mollitia quas totam eaque cumque, dolore minima recusandae, culpa vitae. Inventore ex quaerat sit nemo, impedit asperiores accusamus rerum totam hic animi magnam cupiditate eos voluptatum molestias perferendis illo nulla!
           </article>
           <div className="img-container">
-            <img src={img2} alt="" width="150"/>
+            <img src={img2} alt=""/>
           </div>
         </div>
       </div>
