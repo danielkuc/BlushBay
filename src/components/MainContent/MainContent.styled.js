@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 const StyledMainContent = styled.div`
+  h4 {
+    letter-spacing:.3rem;
+  }
   .item {
     margin: 2rem auto !important;
   }

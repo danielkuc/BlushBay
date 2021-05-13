@@ -14,7 +14,7 @@ const MainContent = () => {
             <img src={img1} alt="" className="img-fluid" />
           </div>
           <div className="text-container">
-            <h3>Spring Makeup Essentials</h3>
+            <h4>Spring Makeup Essentials</h4>
             <hr />
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam fugiat, perferendis totam doloribus suscipit consequatur excepturi itaque dicta aspernatur eligendi!</p>
           </div>
@@ -26,7 +26,7 @@ const MainContent = () => {
             <img src={img2} alt="" className="img-fluid" />
           </div>
           <div className="text-container">
-            <h3>How to choose best blush and highlighter shade</h3>
+            <h4>How to choose best blush and highlighter shade</h4>
             <hr />
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, a optio id ipsa alias consequuntur quisquam officia obcaecati at in.</p>
           </div>
@@ -38,7 +38,7 @@ const MainContent = () => {
             <img src={img3} alt="" className="img-fluid"/>
           </div>
           <div className="text-container">
-            <h3>Colorful, Youthful Eyes!</h3>
+            <h4>Colorful, Youthful Eyes!</h4>
             <hr />
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, provident officiis. Repudiandae eaque commodi quae voluptates enim quibusdam soluta nisi recusandae, provident et. Qui, error. Fugiat quisquam libero magnam eum?</p>
           </div>

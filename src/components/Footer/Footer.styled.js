@@ -15,6 +15,13 @@ const StyledFooter = styled.div`
     border-top: solid 1px black;
     border-bottom: solid 1px black;
   }
+
+  ul {
+    list-style-type:none;
+  }
+  li{
+    margin: .5rem 0;
+  }
 `
 
 export default StyledFooter;

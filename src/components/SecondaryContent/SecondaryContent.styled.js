@@ -10,6 +10,9 @@ const StyledSecondaryContent = styled.div`
     border:solid 1px #000;
     border-radius:.5rem;
   }
+  h3 {
+    letter-spacing:.3rem;
+  }
 
   .img-container {
     padding:1rem;
