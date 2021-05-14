@@ -4,23 +4,31 @@ import StyledMyAccount from './MyAccount.styled';
 
 
 const MyAccount = () => {
-  const [userName, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  // controlled element state :
+  const [state, setState] = useState({
+    userName:'',
+    password:''
+  });
 
+
+  // change handler for controlled component.
   const handleChange = (e) => {
-    setUsername(e.target.value);
+    const value = e.target.value;
+    setState({
+      ...state,[e.target.name]: value
+    });
   }
-// onSubmit={handleSubmit}
+// onSubmit={handleSubmit} !!!
   return (
     <StyledMyAccount className="container">
       <form >
         <label>
           Username:
-          <input type="text" value={userName} onChange={handleChange}/>
+          <input type="text" name="userName" value={state.userName} onChange={handleChange}/>
         </label>
         <label>
           Password:
-          <input type="text" value={password} onChange={handleChange}/>
+          <input type="password" name="password" value={state.password} onChange={handleChange}/>
         </label>
       </form>
     </StyledMyAccount>
