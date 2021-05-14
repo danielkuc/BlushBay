@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
 import MainPage from './components/MainPage';
-import MyAccount from './components/MyAccount';
 import Details from './components/Details';
 import Cart from './components/Cart/Cart';
 import Default from './components/Default';
@@ -15,6 +14,7 @@ import {GlobalState} from './state';
 import LoadingModal from './components/LoadingModal'
 import Incentives from './components/Incentives';
 import { default as Banner } from './components/Banner';
+import  { default as MyAccount} from './components/MyAccount';
 
 export const StoreContext = createContext();
 
