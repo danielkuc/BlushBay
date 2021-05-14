@@ -21,15 +21,16 @@ const MyAccount = () => {
 // onSubmit={handleSubmit} !!!
   return (
     <StyledMyAccount className="container">
-      <form >
-        <label>
+      <form>
+        <label for="userName" className="d-block">
           Username:
-          <input type="text" name="userName" value={state.userName} onChange={handleChange}/>
         </label>
-        <label>
+          <input type="text" name="userName" id="userName" value={state.userName} onChange={handleChange}/>
+        <label for="password" className="d-block">
           Password:
-          <input type="password" name="password" value={state.password} onChange={handleChange}/>
         </label>
+          <input type="password" name="password" id="password" value={state.password} onChange={handleChange}/>
+        <button className="btn btn-warning d-block">Log In</button>
       </form>
     </StyledMyAccount>
   )
