@@ -11,8 +11,8 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const CartValue = useCart();
   const length = CartValue.cart.length;
-
-  useChangeBackgroundOnScroll('navbar', 70, 'var(--lightOrange)');
+  // changes background of navbar on scroll.
+  useChangeBackgroundOnScroll('navbar', 110, 'var(--lightOrange)');
 
   return (
       <NavWrapper className="navbar sticky-top navbar-expand-lg navbar-light">
