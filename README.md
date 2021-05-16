@@ -1,8 +1,19 @@
-# Getting Started with Create React App
+# E-commerce store front project.
+  Created mainly as a react learning project, I wanted to build a store front using external data (fake makeup API),
+## Technologies used:
+  Axios for data fetching
+  Bootstrap and styled-components for styling, and responsiveness.
+  bootstrap-react to make bootstrap work with react, used it's hamburger menu and few other components.
+  
+## How to use : 
+  Navigate the website at your leisure, but bare in mind it is a dummy store front.
+
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
