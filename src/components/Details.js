@@ -40,7 +40,7 @@ const Details = () => {
             {description}
           </p>
           <div>
-            <Link to='/'>
+            <Link to='/products'>
               <ButtonContainer backBtn className="d-flex">
               <i class="fas fa-backspace fa-2x"/> <span className="mt-1 ml-3">Back to products</span> 
               </ButtonContainer>

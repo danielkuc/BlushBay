@@ -24,7 +24,7 @@ const Modal = () => {
           <img src={image_link} className='img-fluid' alt="product"/>
           <p className="h5">{name}</p>
           <p className="h5 text-primary">price : £ {price}</p>
-          <Link to ='/'>
+          <Link to ='/products'>
             <ButtonContainer onClick={() => closeModal()}>
               Continue Shopping
             </ButtonContainer>

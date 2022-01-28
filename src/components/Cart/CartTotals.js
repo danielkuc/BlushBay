@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import PayPalButton from './PayPalButton';
 
 
 const CartTotals = (props) => {
@@ -31,7 +30,6 @@ const CartTotals = (props) => {
                 total:</span>
                 <strong>£{cartTotal}</strong>
             </p>
-            {/* <PayPalButton total={parseInt(cartTotal)} clearCart={clearCart}/> */}
           </div>
         </div>
       </div>
