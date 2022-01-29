@@ -11,8 +11,8 @@
   
 ## How to use : 
   - Navigate the website at your leisure, but bare in mind it is a dummy store front.
-  - Go to products to pupulate a list of products from exterrnal API
-  - Cart is fully functionall with the exception of payments
+  - Go to products to populate list of items from external API
+  - Cart is fully functional with the exception of payments
   - Click on a product to see it's details
 
 
