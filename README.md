@@ -10,6 +10,9 @@
   * bootstrap-react to make bootstrap work with react, used it's hamburger menu and few other components.
   
 ## How to use : 
-  Navigate the website at your leisure, but bare in mind it is a dummy store front.
+  - Navigate the website at your leisure, but bare in mind it is a dummy store front.
+  - Go to products to pupulate a list of products from exterrnal API
+  - Cart is fully functionall with the exception of payments
+  - Click on a product to see it's details
 
 
