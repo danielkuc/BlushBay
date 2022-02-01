@@ -29,6 +29,7 @@ const Modal = () => {
               Continue Shopping
             </ButtonContainer>
           </Link>
+          
           <Link to ='/cart'>
             <ButtonContainer cart onClick={() => closeModal()}>
               Go to your cart
