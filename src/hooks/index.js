@@ -23,7 +23,7 @@ import React from 'react'
     });
 
     try {
-      const newData = await axios.get('/api/')
+      const newData = await axios.get('/api/?brand=maybelline')
       .then(response => {
         const result = response.data.map(object => {return {...object, inCart:false, count: 0}});
         return result;
