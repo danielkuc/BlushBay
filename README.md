@@ -3,7 +3,7 @@
 ## What I've learned and technologies used:
   * Modals
   * Axios
-  * Api requests to backend and external API
+  * Http requests to backend and external API
   * State and props management
   * React Context
   * Bootstrap and styled-components for styling, and responsiveness.
